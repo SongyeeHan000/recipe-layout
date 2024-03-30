@@ -16,9 +16,13 @@
   flex-direction: column;
   width: 60%;
   border-radius: 20px;
-  padding: 50px;
+  padding: 20px 50px;
   margin: auto;
   /* Add this line to center the recipe container*/
+}
+
+.recipe img {
+  border-radius:10px;
 }
 
 .prepTime {
@@ -66,4 +70,7 @@ li {
 
 .nutrients p {
   width:50%
+}
+.nutrients b {
+  color:#854632 ;
 }

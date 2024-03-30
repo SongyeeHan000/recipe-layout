@@ -1,7 +1,16 @@
+'use client'
+import Image from 'next/image'
+import omlette from '../../../../public/omlette.png'
+
 export default function Recipe() {
     return ( 
         <div className="recipe">
-            {/* <img src={omlette} alt="omlette"/> */}
+            <Image 
+                src={omlette}
+                alt="omelette"
+                width= {650}
+                height="auto"
+            />
             <div>
                 <h1>Simple Omelette Recipe</h1>
                 <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
@@ -26,12 +35,12 @@ export default function Recipe() {
                 <div className="instructions">
                     <h2>Instructions</h2>
                     <ol>
-                        <li><span className='text'>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span></li>
-                        <li><span className='text'>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</span></li>
-                        <li><span className='text'>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span> </li>
-                        <li><span className='text'>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span></li>
-                        <li><span className='text'>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span></li>
-                        <li> <span className='text'>Enjoy: Serve hot, with additional salt and pepper if needed.</span></li>
+                        <li><span className='text'><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span></li>
+                        <li><span className='text'><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</span></li>
+                        <li><span className='text'><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span> </li>
+                        <li><span className='text'><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span></li>
+                        <li><span className='text'><b>old and serve:</b>F As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span></li>
+                        <li> <span className='text'><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</span></li>
                     </ol>
                 </div>
                <div className="nutrition">
@@ -39,21 +48,21 @@ export default function Recipe() {
                     <p>The table below shows nutritional values per serving without the additional fillings.</p>
                     <div className="nutrientsContainer">
                         <div className="nutrients" >
-                            <h4>Calories</h4>
-                            <p>277kcal</p>
+                            <p>Calories</p>
+                            <p><b>277kcal</b></p>
                         </div>
                         <div className="nutrients"> 
-                            <h4>Carbs</h4>
-                            <p>0g</p>
+                            <p>Carbs</p>
+                            <p><b>0g</b></p>
                             
                         </div>
                         <div className="nutrients">
-                            <h4>Protein</h4>
-                            <p>20g</p>
+                            <p>Protein</p>
+                            <p><b>20g</b></p>
                         </div>
                         <div className="nutrients">
-                            <h4>Fat</h4>
-                            <p>22g</p>
+                            <p>Fat</p>
+                            <p><b>22g</b></p>
                         </div>
                     </div>
 
