@@ -37,6 +37,26 @@ export default function Recipe() {
                <div className="nutrition">
                     <h2>Nutrition</h2>
                     <p>The table below shows nutritional values per serving without the additional fillings.</p>
+                    <div className="nutrientsContainer">
+                        <div className="nutrients" >
+                            <h4>Calories</h4>
+                            <p>277kcal</p>
+                        </div>
+                        <div className="nutrients"> 
+                            <h4>Carbs</h4>
+                            <p>0g</p>
+                            
+                        </div>
+                        <div className="nutrients">
+                            <h4>Protein</h4>
+                            <p>20g</p>
+                        </div>
+                        <div className="nutrients">
+                            <h4>Fat</h4>
+                            <p>22g</p>
+                        </div>
+                    </div>
+
                </div>
                
             </div>

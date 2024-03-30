@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 20px 0px;
 }
 
 .recipe{
@@ -38,7 +39,7 @@
   color:#854632 ;
 }
 
-ul, ol{
+ul, ol {
   color: #854632;
 }
 
@@ -52,4 +53,18 @@ ul, ol{
 
 .nutrition h2 {
   color: #854632
+}
+.nutrientsContainer {
+  display: flex;
+  flex-direction: column; 
+}
+.nutrients {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  border-bottom: 1px solid black;
+}
+
+.nutrients p {
+  width:50%
 }
