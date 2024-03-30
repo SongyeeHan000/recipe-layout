@@ -1,0 +1,55 @@
+:root {
+  background-color: #f3e6d8;
+  color: #302d2c
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.recipe{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  border-radius: 20px;
+  padding: 50px;
+  margin: auto;
+  /* Add this line to center the recipe container*/
+}
+
+.prepTime {
+  background-color: #fff5fa;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.prepTime h3 {
+  color: 	#7b284f
+}
+
+.prepTime b,li {
+  color: #5f574e;
+}
+
+.ingredients h2 {
+  color:#854632 ;
+}
+
+ul, ol{
+  color: #854632;
+}
+
+.text {
+  color:#302d2c
+}
+
+.instructions h2 {
+  color: #854632;
+}
+
+.nutrition h2 {
+  color: #854632
+}
