@@ -93,55 +93,35 @@ li {
     width: 100%;
     object-fit:cover;
   }
+  .navBar {
+    width: auto;
+  }
+  
 }
-
-/* .contactForm {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 60%;
-  height: 80vh;
-  margin: 0 auto;
-  border-radius: 20px;
-}
-
-.contactForm form, .getInTouch {
-  padding: 0px 40px
-}
-
-.contactForm input {
-  width: 100%
-}
-
-.contactForm textarea {
-  width: auto;
-  height: 30vh;
-} */
 
 .contactForm {
   max-width: 600px;
-  margin: 0 auto;
+  margin: auto; /*Center horizontally*/
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 20px;
   box-sizing: border-box;
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange items vertically */
-}
-.contactForm {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: row; /*Arrange items horizontally*/
+  align-items: center;/* Center vertically*/
+  justify-content: center; /*Center horizontally*/
+  height: 80vh; /*Take full height of the viewport*/
   background-color: white;
 }
+
 .getInTouch {
-  /* padding: 0px 30px; */
+  flex: 1; /*Take remaining space*/
+  padding: 0px 20px;/*Add spacing between getInTouch and form*/
 }
+
 .contactForm form {
-  margin-top: 20px;
-  padding: 0px 30px;
+  flex: 1; /*Take remaining space*/
+  padding-left: 20px; /*Add spacing between getInTouch and form*/
 }
 
 .contactForm label {
@@ -163,4 +143,23 @@ li {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .contactForm {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .getInTouch {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .contactForm form {
+    padding-left: 0;
+  }
 }

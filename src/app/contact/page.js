@@ -20,20 +20,24 @@ export default function Contact() {
         <form>
             <div>
             <label>First Name</label>
+            <br></br>
                 <input type="text" name="firstName" />
             </div>
             <div>
-            <label>Last Name</label>
+                <label>Last Name</label>
+                <br></br>
                 <input type="text" name="lastName" />
             </div>
 
             <div>
                 <label>Email</label>
+                <br></br>
                 <input type="text" name="email" />
             </div>
 
             <div>
                 <label>Message</label>
+                <br></br>
                 <textarea name="message"></textarea>
             </div>
             <button type="submit">Send message</button>
